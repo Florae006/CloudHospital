@@ -1,5 +1,89 @@
-# Vue 3 + TypeScript + Vite
+# Todo List
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+```markdown
+![Todo Summary](https://img.shields.io/badge/Todo-0%20completed%20out%20of%2037%20tasks-red)
+```
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 账号模块
+
+- [ ] 登录功能
+
+## 挂号模块
+
+- [ ] 查询所有部门信息
+
+- [ ] 查询所有部门名称及对应的id
+
+- [ ] 查询当前值班医生
+
+- [ ] 修改检查申请表的状态
+
+- [ ] 添加挂号人员信息
+
+- [ ] 根据医生模糊查询病人挂号信息
+
+- [ ] 根据挂号编号和姓名查询挂号信息
+
+- [ ] 查询最大编号
+
+- [ ] 根据医生id查询当前挂号人数
+
+- [ ] 根据id修改检查申请表的状态
+
+- [ ] 根据患者id和状态查询处方和对应的药品
+
+- [ ] 根据处方id修改对应的状态
+
+- [ ] 去重查询查询号别名称
+
+- [ ] 查询所有号别信息
+
+- [ ] 查询所有的缴费方式
+
+## 门诊医生模块
+
+- [ ] 添加检查信息
+
+- [ ] 根据患者id查询当前已出结果的项目
+
+- [ ] 根据疾病名称实现模糊查询
+
+- [ ] 添加病人病历信息
+
+- [ ] 更新病人病历信息
+
+- [ ] 添加病历id和疾病id
+
+- [ ] 根据病历id查询关联疾病
+
+- [ ] 根据名称和编号模糊查询检查项目
+
+- [ ] 添加处方信息
+
+- [ ] 根据医生id查询今日已看诊人数
+
+- [ ] 根据挂号id修改当前挂号状态
+
+- [ ] 根据患者姓名和编号查询已经医生接诊的挂号信息
+
+## 检查医生模块
+
+- [ ] 根据id修改检查申请表状态为执行完成
+
+- [ ] 根据医生Id和部门id查询当天已检查人数
+
+- [ ] 根据科室类型查询科室信息
+
+- [ ] 根据科室id查询当前值班医生
+
+- [ ] 根据患者挂号id和部门并且已缴费查询项目
+
+- [ ] 根据患者挂号编号和姓名及项目部门查询已经执行完成的项目
+
+- [ ] 根据患者编号和姓名查询已缴费的检查项目
+
+## 药房管理模块
+
+- [ ] 查询药品已缴费的患者信息
+
+- [ ] 根据名称和助记码进行模糊查询药品
