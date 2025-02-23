@@ -1,8 +1,6 @@
 # Todo List
 
-```markdown
 ![Todo Summary](https://img.shields.io/badge/Todo-0%20completed%20out%20of%2037%20tasks-red)
-```
 
 ## 账号模块
 
