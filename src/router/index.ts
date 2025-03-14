@@ -1,7 +1,13 @@
 import { createRouter } from 'vue-router';
 import { createWebHistory } from 'vue-router';
 
-const routes = [];
+const routes = [
+  {
+    name: 'home',
+    path: '/',
+    component: () => import('@/views/HomeView.vue'),
+  }
+];
 
 routes.push({
   name: 'notFound',
@@ -20,64 +26,6 @@ router.beforeEach((to, from, next) => {
   console.log('to:', to);
   console.log('from:', from);
   next();
-  // if (to.path === '/logout') {
-  //   localStorage.clear();
-  //   if (from.path.startsWith('/admin')) {
-  //     console.log('admin logout');
-  //     next('/admin/login');
-  //   } else {
-  //     next('/login');
-  //   }
-  //   return;
-  // }
-
-  // if (to.path === '/login' || to.path === '/admin/login') {
-  //   localStorage.clear();
-  //   next();
-  //   return;
-  // }
-  // if (!to.meta.requireAuth || from.meta.requireAuth) {
-  //   next();
-  //   return;
-  // }
-  // const notLogin = useAccessTokenStore().getAccessToken() === '';
-  // if (notLogin) {
-  //   ElMessageBox.confirm('请先登录', '提示', {
-  //     confirmButtonText: '确定',
-  //     type: 'warning',
-  //   }).then(() => {
-  //     if (to.path.startsWith('/admin')) {
-  //       next('/admin/login');
-  //     } else {
-  //       next('/login');
-  //     }
-  //   });
-  //   return;
-  // }
-  // // next();
-  // commonOnline()
-  //   .then((response) => {
-  //     const res = response.data;
-  //     if (res.code === 0) {
-  //       next();
-  //     } else {
-  //       ElMessage.error(res.message);
-  //       if (to.path.startsWith('/admin')) {
-  //         next('/admin/login');
-  //       } else {
-  //         next('/login');
-  //       }
-  //     }
-  //   })
-  //   .catch((error) => {
-  //     console.log(error);
-  //     ElMessage.error('网络错误');
-  //     if (to.path.startsWith('/admin')) {
-  //       next('/admin/login');
-  //     } else {
-  //       next('/login');
-  //     }
-  //   });
 });
 
 export default router;

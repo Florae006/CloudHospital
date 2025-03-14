@@ -1,9 +1,8 @@
 <script setup lang="ts">
 
 </script>
-
 <template>
-    <div class="w-full h-full flex justify-center items-center">
-        <h1>首页</h1>
-    </div>
+  <div class="w-full h-full flex justify-center items-center">
+    首页
+  </div>
 </template>
